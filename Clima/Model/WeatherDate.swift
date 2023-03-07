@@ -1,16 +1,16 @@
 import Foundation
 
-struct WeatherDate: Decodable {
+struct WeatherDate: Codable {
     let name: String
     let main: Main
     let weather: [Weather]
 }
 
-struct Main: Decodable {
+struct Main: Codable {
     let temp: Double
     let feels_like: Double
 }
 
-struct Weather: Decodable {
+struct Weather: Codable {
     let id: Int
 }
